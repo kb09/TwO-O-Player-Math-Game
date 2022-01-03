@@ -10,4 +10,11 @@ class Game
     player1 = gets.chomp
     puts "Enter player 2 name"
     player2 = gets.chomp
+    @player1 = Player.new(player1)
+    @player2 = player2.new(player2)
   end
+
+  def randomQuestion 
+    @randomQuestion = Questions.new
+  end
+
