@@ -1,6 +1,6 @@
 class Questions
   
-  attr_reader: newQuestion, :answer
+  attr_reader :newQuestion, :answer
 
   def initalize 
     num1 = rand (1..20)  # Range to generate random numbers from 1 to (including) 20 
