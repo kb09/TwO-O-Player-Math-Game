@@ -10,20 +10,23 @@ class Game
   def initalize
     puts "Enter player 1 name"
     player1 = gets.chomp
+    @player1 = Player.new(player1)
+
     puts "Enter player 2 name"
     player2 = gets.chomp
-    @player1 = Player.new(player1)
     @player2 = Player2.new(player2)
   end
 
   def randomQuestion 
     @randomQuestion = Questions.new
+    puts " NEW TURN "
 
     if @player1.turn 
       puts "#{@player2.name}: #{@newQuestion.newQuestion}"
     else
       puts "#{@player1.name}: #{@newQuestion.newQuestion}"
       end
+    end 
 
   end
 
